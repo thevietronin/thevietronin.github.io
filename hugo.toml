@@ -1,0 +1,145 @@
+# Hugo PaperMod - cập nhật theme: chạy "hugo mod get -u"
+# https://github.com/adityatelange/hugo-PaperMod
+
+baseURL = 'https://localhost:1313'
+languageCode = 'en-us'
+title = 'thevietronin'
+paginate = 5
+
+# Theme: dùng Hugo Modules (path) để luôn lấy bản mới từ tác giả
+theme = ['github.com/adityatelange/hugo-PaperMod']
+
+[module]
+  [[module.imports]]
+    path = 'github.com/adityatelange/hugo-PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+enableInlineShortcodes = true
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = 'production'
+  description = 'ExampleSite description'
+  author = 'Me'
+  keywords = ['Blog', 'Portfolio', 'PaperMod']
+  DateFormat = 'January 2, 2006'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.assets]
+    # disableHLJS = true
+    # disableFingerprinting = true
+
+  [params.label]
+    text = 'thevietronin'
+    iconHeight = 35
+
+  # Chế độ profile (trang chủ hiển thị avatar + nút)
+  [params.profileMode]
+    enabled = false
+    title = 'thevietronin blog'
+    subtitle = "This is thevietronin's blog"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = 'my image'
+    [[params.profileMode.buttons]]
+      name = 'Posts'
+      url = 'posts'
+    [[params.profileMode.buttons]]
+      name = 'Tags'
+      url = 'tags'
+
+  # Chế độ home-info (lời chào + nội dung ngắn trên trang chủ)
+  [params.homeInfoParams]
+    Title = 'Hi there 👋'
+    Content = 'Welcome to my blog'
+
+  # Icon mạng xã hội (hiển thị khi dùng profileMode hoặc home-info)
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/'
+  [[params.socialIcons]]
+    name = 'x'
+    url = 'https://x.com/'
+
+  [params.analytics]
+    [params.analytics.google]
+      SiteVerificationTag = 'XYZabc'
+    [params.analytics.bing]
+      SiteVerificationTag = 'XYZabc'
+    [params.analytics.yandex]
+      SiteVerificationTag = 'XYZabc'
+
+  [params.cover]
+    hidden = false
+    hiddenInList = true
+    hiddenInSingle = false
+
+  [params.editPost]
+    URL = 'https://github.com/thevietronin/thevietronin.github.io/content'
+    Text = 'Suggest Changes'
+    appendFilePath = true
+
+  # Tìm kiếm (Fuse.js)
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    limit = 10
+    keys = ['title', 'permalink', 'summary', 'content']
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[menu]
+  [[menu.main]]
+    identifier = 'categories'
+    name = 'Categories'
+    url = '/categories/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'Archives'
+    url = '/archives/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'search'
+    name = '🔍 Search'
+    url = '/search/'
+    weight = 1
+
+# Chroma syntax highlighter (Hugo built-in)
+pygmentsUseClasses = true
+[markup.highlight]
+  noClasses = false
