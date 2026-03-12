@@ -6,7 +6,7 @@ categories: ["Tech", "Hugo"]
 author: "Me"
 
 showToc: true
-tocOpen: true
+tocOpen: false
 draft: false
 hidemeta: false
 comments: false
