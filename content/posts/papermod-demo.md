@@ -30,11 +30,6 @@ cover:
   alt: "Minh hoạ PaperMod demo cover"
   relative: false
   hidden: false
-
-editPost:
-  URL: "https://github.com/thevietronin/thevietronin.github.io/content"
-  Text: "Suggest Changes"
-  appendFilePath: true
 ---
 
 ## 1. Giới thiệu
