@@ -1,9 +1,7 @@
 ---
 title: "Hello World"
 date: 2025-03-14
-tags: ["hello-world"]
-categories: ["Tech", "Hugo"]
-author: "Me"
+author: "thevietronin"
 
 showToc: true
 tocOpen: false
