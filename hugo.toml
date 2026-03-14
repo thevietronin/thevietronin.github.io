@@ -75,7 +75,7 @@ enableInlineShortcodes = true
   # Chế độ home-info (lời chào + nội dung ngắn trên trang chủ)
   [params.homeInfoParams]
     Title = 'Hi there 👋'
-    Content = 'Welcome to my blog'
+    Content = 'I am thevietronin, an offensive security engineer who often wrestles with boredom, self-doubt, and a shaky sense of motivation. This space is a mix of technical security write-ups, messy reflections on life, and whatever else happens to be on my mind.'
 
   # Icon mạng xã hội (hiển thị khi dùng profileMode hoặc home-info)
   [[params.socialIcons]]
